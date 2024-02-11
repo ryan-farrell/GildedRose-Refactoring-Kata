@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gildedrose:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./php:/php
+    working_dir: /php
